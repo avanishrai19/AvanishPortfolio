@@ -13,6 +13,10 @@ export default [
       parserOptions: { ecmaVersion: 'latest', ecmaFeatures: { jsx: true }, sourceType: 'module' },
     },
     plugins: { 'react-hooks': reactHooks, 'react-refresh': reactRefresh },
-    rules: { ...js.configs.recommended.rules, ...reactHooks.configs['recommended-latest'].rules, 'react-refresh/only-export-components': ['warn', { allowConstantExport: true }] },
+    rules: {
+      ...js.configs.recommended.rules,
+      ...reactHooks.configs['recommended-latest'].rules,
+      'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+    },
   },
 ]

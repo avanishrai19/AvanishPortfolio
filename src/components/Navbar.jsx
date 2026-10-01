@@ -17,8 +17,12 @@ function Navbar() {
     <header className="site-header">
       <nav className="section-wrap nav-shell" aria-label="Main navigation">
         <a className="brand" href="#home" onClick={() => setMenuOpen(false)}>
-          <span className="brand-mark" aria-hidden="true">AR</span>
-          <span>Avanish Rai<span className="brand-dot">.</span></span>
+          <span className="brand-mark" aria-hidden="true">
+            AR
+          </span>
+          <span>
+            Avanish Rai<span className="brand-dot">.</span>
+          </span>
         </a>
         <button
           className="menu-toggle"
@@ -31,9 +35,13 @@ function Navbar() {
         </button>
         <div className={`nav-links${menuOpen ? ' is-open' : ''}`}>
           {links.map(([label, href]) => (
-            <a key={label} href={href} onClick={() => setMenuOpen(false)}>{label}</a>
+            <a key={label} href={href} onClick={() => setMenuOpen(false)}>
+              {label}
+            </a>
           ))}
-          <a className="nav-cta" href="#contact" onClick={() => setMenuOpen(false)}>Say hello <ArrowUpRight size={15} /></a>
+          <a className="nav-cta" href="#contact" onClick={() => setMenuOpen(false)}>
+            Say hello <ArrowUpRight size={15} />
+          </a>
         </div>
       </nav>
     </header>

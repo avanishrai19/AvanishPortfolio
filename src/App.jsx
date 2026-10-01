@@ -7,7 +7,6 @@ import Education from './components/Education'
 import Certificate from './components/Certificate'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import ResumePrint from './components/ResumePrint'
 
 function App() {
   return (
@@ -23,7 +22,6 @@ function App() {
         <Contact />
       </main>
       <Footer />
-      <ResumePrint />
     </>
   )
 }

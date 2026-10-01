@@ -7,19 +7,53 @@ function Hero() {
       <div className="hero-glow" aria-hidden="true" />
       <div className="section-wrap hero-layout">
         <div className="hero-copy">
-          <p className="eyebrow hero-eyebrow"><span className="status-dot" /> BCA student · building for the web</p>
-          <h1 className="hero-title">Hi, I&apos;m <span>Avanish Rai</span></h1>
+          <p className="eyebrow hero-eyebrow">
+            <span className="status-dot" /> BCA student · building for the web
+          </p>
+          <h1 className="hero-title">
+            Hi, I&apos;m <span>Avanish Rai</span>
+          </h1>
           <p className="hero-role">Full Stack Developer in the Making</p>
-          <p className="hero-description">I&apos;m a BCA student passionate about web development, React, and backend engineering. I enjoy building practical applications and learning how each piece of a product works together.</p>
+          <p className="hero-description">
+            I&apos;m a BCA student passionate about web development, React, and backend engineering.
+            I enjoy building practical applications and learning how each piece of a product works
+            together.
+          </p>
           <div className="hero-actions">
-            <a className="button button-primary" href="#projects">View Projects <ArrowDown size={16} /></a>
-            <button className="button button-secondary" onClick={() => window.print()} type="button">Download Resume <ArrowDownToLine size={16} /></button>
+            <a className="button button-primary" href="#projects">
+              View Projects <ArrowDown size={16} />
+            </a>
+            <a
+              className="button button-secondary"
+              href="/AvanishMainResume.pdf"
+              download="Avanish-Rai-Resume.pdf"
+            >
+              Download Resume <ArrowDownToLine size={16} />
+            </a>
             <div className="hero-socials">
-              <a aria-label="Avanish Rai on GitHub" className="social-link" href="https://github.com/avanishrai19" rel="noreferrer" target="_blank"><GitBranch size={18} /></a>
-              <a aria-label="Open LinkedIn" className="social-link" href="https://www.linkedin.com/" rel="noreferrer" target="_blank"><BriefcaseBusiness size={18} /></a>
+              <a
+                aria-label="Avanish Rai on GitHub"
+                className="social-link"
+                href="https://github.com/avanishrai19"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <GitBranch size={18} />
+              </a>
+              <a
+                aria-label="Open LinkedIn"
+                className="social-link"
+                href="https://www.linkedin.com/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <BriefcaseBusiness size={18} />
+              </a>
             </div>
           </div>
-          <p className="hero-location"><MapPin size={15} /> Dehradun, Uttarakhand, India</p>
+          <p className="hero-location">
+            <MapPin size={15} /> Dehradun, Uttarakhand, India
+          </p>
         </div>
         <div className="portrait-wrap">
           <div className="portrait-frame">

@@ -15,8 +15,15 @@ function About() {
           <h2 className="section-title about-title">Curious about how the whole thing works.</h2>
         </div>
         <div>
-          <p className="about-lead">I&apos;m pursuing a BCA at Guru Nanak College, Dehradun, and working toward becoming a full stack developer. I&apos;ve built projects with React.js and Flask, and I&apos;m currently learning the MERN stack.</p>
-          <p className="about-detail">I like making practical applications that solve a clear problem, while getting more comfortable with the frontend, backend, and database choices behind them.</p>
+          <p className="about-lead">
+            I&apos;m pursuing a BCA at Guru Nanak College, Dehradun, and working toward becoming a
+            full stack developer. I&apos;ve built projects with React.js and Flask, and I&apos;m
+            currently learning the MERN stack.
+          </p>
+          <p className="about-detail">
+            I like making practical applications that solve a clear problem, while getting more
+            comfortable with the frontend, backend, and database choices behind them.
+          </p>
           <div className="about-highlights">
             {highlights.map(({ icon: Icon, label, value }) => (
               <div className="highlight-card" key={label}>
@@ -26,7 +33,9 @@ function About() {
               </div>
             ))}
           </div>
-          <a className="about-link" href="#projects">See what I&apos;ve been building <ArrowUpRight size={15} /></a>
+          <a className="about-link" href="#projects">
+            See what I&apos;ve been building <ArrowUpRight size={15} />
+          </a>
         </div>
       </div>
     </section>

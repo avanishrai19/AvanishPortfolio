@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.git/
+package-lock.json
+public/images/
+*.pdf
+*.png
