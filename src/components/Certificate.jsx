@@ -10,7 +10,7 @@ function Certificate() {
         </div>
         <a
           className="certificate-card"
-          href="/nd2_ns_nou25_cs23_265610052635_nou26_cs08-4.pdf"
+          href={`${import.meta.env.BASE_URL}nd2_ns_nou25_cs23_265610052635_nou26_cs08-4.pdf`}
           rel="noreferrer"
           target="_blank"
           aria-label="View IGNOU Web Technology certificate PDF"

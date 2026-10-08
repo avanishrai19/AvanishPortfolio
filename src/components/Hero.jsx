@@ -25,7 +25,7 @@ function Hero() {
             </a>
             <a
               className="button button-secondary"
-              href="/AvanishMainResume.pdf"
+              href={`${import.meta.env.BASE_URL}AvanishMainResume.pdf`}
               download="Avanish-Rai-Resume.pdf"
             >
               Download Resume <ArrowDownToLine size={16} />
@@ -57,7 +57,11 @@ function Hero() {
         </div>
         <div className="portrait-wrap">
           <div className="portrait-frame">
-            <img src="/images/avanish-rai.png" alt="Avanish Rai" fetchPriority="high" />
+            <img
+              src={`${import.meta.env.BASE_URL}images/avanish-rai.png`}
+              alt="Avanish Rai"
+              fetchPriority="high"
+            />
             <div className="portrait-caption">
               <p>Learning by building</p>
               <span>React · Flask · exploring MERN</span>
