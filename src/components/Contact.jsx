@@ -1,14 +1,6 @@
-import { useState } from 'react'
 import { ArrowUpRight, BriefcaseBusiness, GitBranch, Mail, Send } from 'lucide-react'
 
 function Contact() {
-  const [submitted, setSubmitted] = useState(false)
-
-  function handleSubmit(event) {
-    event.preventDefault()
-    setSubmitted(true)
-  }
-
   return (
     <section className="section-space section-border" id="contact">
       <div className="section-wrap">
@@ -44,7 +36,11 @@ function Contact() {
               Add your LinkedIn profile URL to make these contact details personal.
             </p>
           </aside>
-          <form className="contact-form" onSubmit={handleSubmit}>
+          <form
+            action="https://formspree.io/f/mgaongzb"
+            className="contact-form"
+            method="POST"
+          >
             <div className="form-fields">
               <label>
                 Name
@@ -70,16 +66,11 @@ function Contact() {
                 />
               </label>
             </div>
-            {/* TODO: Connect this form to a backend or email service before accepting messages. */}
             <div className="form-footer">
               <button type="submit">
                 Send message <Send size={14} />
               </button>
-              <p aria-live="polite">
-                {submitted
-                  ? 'Thanks! This form is a preview and does not send messages yet.'
-                  : 'Form preview · no backend connected'}
-              </p>
+              <p aria-live="polite">Your message will be sent to my inbox.</p>
             </div>
           </form>
         </div>
