@@ -24,7 +24,7 @@ A modern, responsive personal portfolio website built with **React.js** and **Vi
 * Education section
 * Certifications section
 * Resume section
-* Contact section
+* Contact form powered by Formspree
 * Responsive design for desktop, tablet, and mobile
 * Smooth animations and interactive UI
 * Reusable React components
@@ -103,6 +103,16 @@ The project will be available at:
 http://localhost:5173
 ```
 
+## 📬 Contact Form
+
+The contact form submits messages to Formspree. To use it with your own Formspree form:
+
+1. Create a form in your Formspree account and verify the email address that should receive submissions.
+2. Set the form's endpoint as the `action` URL in `src/components/Contact.jsx`.
+3. Deploy the updated portfolio and submit a test message.
+
+Formspree handles delivery; no separate backend server is required.
+
 ## 📌 Featured Projects
 
 ### AI-Based Health Report Analyzer
@@ -150,7 +160,6 @@ I enjoy working with modern web technologies and continuously improving my devel
 * Add dark/light theme improvements
 * Add more projects
 * Improve accessibility
-* Add backend functionality
 * Deploy the portfolio online
 * Continue improving animations and UI
 
